@@ -23,13 +23,9 @@ function activateunluckhome()
 	{
 		$.each(doorsHome, function(i)
 		{
-			doorsHome[i].locked = false;
+			doorsHome[i].locked = true;
 		});
-		$(".messageboxmessage").html("Samtlige døre i dit hjem er nu ulåst");
-		$(".messagebox").removeClass("hide");
 		displayHome();
-		displayUnlocked();
-		displayLocked();
 	});
 }
 
@@ -40,13 +36,9 @@ function activateunlockwork()
 	{
 		$.each(doorsWork, function(i)
 		{
-			doorsWork[i].locked = false;
+			doorsWork[i].locked = true;
 		});
-		$(".messageboxmessage").html("Samtlige døre på dit arbejde er nu ulåst");
-		$(".messagebox").removeClass("hide");
 		displayWork();
-		displayUnlocked();
-		displayLocked();
 	});
 }
 
@@ -57,12 +49,8 @@ function activateunlockfree()
 	{
 		$.each(doorsFree, function(i)
 		{
-			doorsFree[i].locked = false;
+			doorsFree[i].locked = true;
 		});
-		$(".messageboxmessage").html("Samtlige døre under fritid er nu ulåst");
-		$(".messagebox").removeClass("hide");
 		displayFree();
-		displayUnlocked();
-		displayLocked();
 	});
 }

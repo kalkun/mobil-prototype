@@ -124,15 +124,11 @@ var keys = [{
 		}];
 		var doorsFree = [
 		{
-			name: "Audi",
+			name: "Bil",
 			locked: true
 		},
 		{
-			name: "BMW",
-			locked: false
-		},
-		{
-			name: "Bike - BMX",
+			name: "Cykel",
 			locked: false
 		}]
 		</script>
