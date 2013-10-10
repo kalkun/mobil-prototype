@@ -1,6 +1,33 @@
 function displayHome()
 {
 	$("#home").empty();
+	var div = document.createElement("div");
+	$(div).css("width", "95%");
+	$(div).css("height", "50px");
+	$(div).css("border-style", "solid");
+	$(div).css("left", "0px");
+	$(div).css("right", "0px");
+	$(div).css("margin", "auto");
+	$(div).css("margin-top", "10px");
+	$(div).css("border-radius", "10px");
+
+	var button = document.createElement("button");
+	$(button).html("Lås alle");
+	$(button).addClass("lockallhome");
+	$(button).css("width", "100px");
+	$(button).css("margin", "14px");
+	$(div).append(button);
+
+	var button = document.createElement("button");
+	$(button).html("Åben alle");
+	$(button).addClass("unlockallhome");
+	$(button).css("width", "100px");
+	$(div).append(button);
+	$("#home").append(div);
+
+	activatelockhome();
+	activateunluckhome();
+
 	var header = document.createElement("div");
 	$(header).css("text-align", "center");
 	$(header).html("Arbejde");

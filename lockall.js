@@ -16,41 +16,53 @@ $(".lockall").mousedown(function()
 	$(".messagebox").removeClass("hide");
 });
 
-$(".lockallhome").mousedown(function()
+function activatelockhome()
 {
-	$.each(doorsHome, function(i)
+	$(".lockallhome").unbind();
+	$(".lockallhome").mousedown(function()
 	{
-		doorsHome[i].locked = true;
+		$.each(doorsHome, function(i)
+		{
+			doorsHome[i].locked = true;
+		});
+		$(".messageboxmessage").html("Samtlige døre i dit hjem er nu låst");
+		$(".messagebox").removeClass("hide");
+		displayHome();
+		displayUnlocked();
+		displayLocked();
 	});
-	$(".messageboxmessage").html("Samtlige døre i dit hjem er nu låst");
-	$(".messagebox").removeClass("hide");
-	displayHome();
-	displayUnlocked();
-	displayLocked();
-});
+}
 
-$(".lockallwork").mousedown(function()
+function activatelockwork()
 {
-	$.each(doorsWork, function(i)
+	$(".lockallwork").unbind();
+	$(".lockallwork").mousedown(function()
 	{
-		doorsWork[i].locked = true;
+		$.each(doorsWork, function(i)
+		{
+			doorsWork[i].locked = true;
+		});
+		$(".messageboxmessage").html("Samtlige døre på dit arbejde er nu låst");
+		$(".messagebox").removeClass("hide");
+		displayWork();
+		displayUnlocked();
+		displayLocked();
 	});
-	$(".messageboxmessage").html("Samtlige døre på dit arbejde er nu låst");
-	$(".messagebox").removeClass("hide");
-	displayWork();
-	displayUnlocked();
-	displayLocked();
-});
+}
 
-$(".lockallfree").mousedown(function()
+function activatelockfree()
 {
-	$.each(doorsFree, function(i)
+	$(".lockallfree").unbind();
+	$(".lockallfree").mousedown(function()
 	{
-		doorsFree[i].locked = true;
+		$.each(doorsFree, function(i)
+		{
+			doorsFree[i].locked = true;
+		});
+		$(".messageboxmessage").html("Samtlige døre under fritid er nu låst");
+		$(".messagebox").removeClass("hide");
+		displayFree();
+		displayUnlocked();
+		displayLocked();
 	});
-	$(".messageboxmessage").html("Samtlige døre under fritid er nu låst");
-	$(".messagebox").removeClass("hide");
-	displayFree();
-	displayUnlocked();
-	displayLocked();
-});
+}

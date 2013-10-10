@@ -1,6 +1,34 @@
 function displayFree()
 {
 	$("#free").empty();
+
+	var div = document.createElement("div");
+	$(div).css("width", "95%");
+	$(div).css("height", "50px");
+	$(div).css("border-style", "solid");
+	$(div).css("left", "0px");
+	$(div).css("right", "0px");
+	$(div).css("margin", "auto");
+	$(div).css("margin-top", "10px");
+	$(div).css("border-radius", "10px");
+
+	var button = document.createElement("button");
+	$(button).html("Lås alle");
+	$(button).addClass("lockallfree");
+	$(button).css("width", "100px");
+	$(button).css("margin", "14px");
+	$(div).append(button);
+
+	var button = document.createElement("button");
+	$(button).html("Åben alle");
+	$(button).addClass("unlockallfree");
+	$(button).css("width", "100px");
+	$(div).append(button);
+	$("#free").append(div);
+
+	activateunlockfree();
+	activatelockfree();
+
 	var header = document.createElement("div");
 	$(header).css("text-align", "center");
 	$(header).html("Fritid");
@@ -56,31 +84,31 @@ function displayFree()
 
 		$("#free").append(button);
 	});
-	
-	var div2 = document.createElement("div");
-	$(div2).addClass("last");
-	var font = document.createElement("font");
-	$(font).html("Tilføj dør");
-	$(div2).append(font);
-	var div3 = document.createElement("div");
-	$(div2).append(div3);
-	var input = document.createElement("input");
-	$(input).attr("type", "text");
-	$(input).attr("placeholder", "Navn på dør");
-	$(input).attr("id", "freename");
-	$(input).css("width", "150");
-	$(div3).append(input);
-	var div3 = document.createElement("div");
-	var button = document.createElement("button");
-	$(button).css("width", "150");
-	$(button).html("Tilføj");
-	$(button).addClass("addFree");
-	$(div3).append(button);
-	$(div2).append(div3);
-	$("#free").append(div2);
-	turnonoff();
-	activateAddFree();
-	addRemoveBind();
+
+var div2 = document.createElement("div");
+$(div2).addClass("last");
+var font = document.createElement("font");
+$(font).html("Tilføj dør");
+$(div2).append(font);
+var div3 = document.createElement("div");
+$(div2).append(div3);
+var input = document.createElement("input");
+$(input).attr("type", "text");
+$(input).attr("placeholder", "Navn på dør");
+$(input).attr("id", "freename");
+$(input).css("width", "150");
+$(div3).append(input);
+var div3 = document.createElement("div");
+var button = document.createElement("button");
+$(button).css("width", "150");
+$(button).html("Tilføj");
+$(button).addClass("addFree");
+$(div3).append(button);
+$(div2).append(div3);
+$("#free").append(div2);
+turnonoff();
+activateAddFree();
+addRemoveBind();
 }
 
 function activateAddFree()

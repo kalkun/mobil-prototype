@@ -33,28 +33,36 @@ function activateunluckhome()
 	});
 }
 
-$(".unlockallwork").mousedown(function()
+function activateunlockwork()
 {
-	$.each(doorsWork, function(i)
+	$(".unlockallwork").unbind();
+	$(".unlockallwork").mousedown(function()
 	{
-		doorsWork[i].locked = false;
+		$.each(doorsWork, function(i)
+		{
+			doorsWork[i].locked = false;
+		});
+		$(".messageboxmessage").html("Samtlige døre på dit arbejde er nu ulåst");
+		$(".messagebox").removeClass("hide");
+		displayWork();
+		displayUnlocked();
+		displayLocked();
 	});
-	$(".messageboxmessage").html("Samtlige døre på dit arbejde er nu ulåst");
-	$(".messagebox").removeClass("hide");
-	displayWork();
-	displayUnlocked();
-	displayLocked();
-});
+}
 
-$(".unlockallfree").mousedown(function()
+function activateunlockfree()
 {
-	$.each(doorsFree, function(i)
+	$(".unlockallfree").unbind();
+	$(".unlockallfree").mousedown(function()
 	{
-		doorsFree[i].locked = false;
+		$.each(doorsFree, function(i)
+		{
+			doorsFree[i].locked = false;
+		});
+		$(".messageboxmessage").html("Samtlige døre under fritid er nu ulåst");
+		$(".messagebox").removeClass("hide");
+		displayFree();
+		displayUnlocked();
+		displayLocked();
 	});
-	$(".messageboxmessage").html("Samtlige døre under fritid er nu ulåst");
-	$(".messagebox").removeClass("hide");
-	displayFree();
-	displayUnlocked();
-	displayLocked();
-});
+}
