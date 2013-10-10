@@ -5,6 +5,7 @@
 	<link href="iPhone.css" rel="stylesheet">
 </head>
 <body>
+	<button onclick="navhistory()">Back</button>
 	<div class="phone">
 		<div id="index" class="screen">
 			<br>
@@ -152,7 +153,31 @@ var keys = [{
 		$('.pass').keydown(function(e){
 			if(e.keyCode ==13) {$('#confirm').trigger('click')}})	 
 
-		$
+		$(document).keydown(function(e)
+		{
+			if (e.keyCode == 37)
+			{
+				navhistory();
+			}
+		})
+		// detect right swipe:
+		var xStart;
+		$(document).mousedown(function(e)
+		{
+			xStart = e.pageX;
+		})
+		$(document).mouseup(function(e)
+		{
+			if (xStart != undefined)
+			{
+				len = e.pageX - xStart 
+				if(len > 35 && len < 100)
+				{
+					navhistory();
+				}
+			}
+		})
+
 		</script>
 
 		<script src="linker.js"></script>
