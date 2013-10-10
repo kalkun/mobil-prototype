@@ -7,6 +7,9 @@
 <body>
 	<div class="phone">
 		<div id="index" class="screen">
+			
+		</div>
+		<div id="subindex" class="screen hide">
 			<table>
 				<tr>
 					<td class="hand lockall">Lås alle</td>
