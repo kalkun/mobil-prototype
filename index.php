@@ -54,7 +54,7 @@
 				Reserver batteri
 			</div>
 			<div class="right">
-				<input type="number" placeholder="minutter" style="top: -10px;">
+				<input type="number" placeholder="minutter" style="top: -10px;" min="2">
 			</div>
 			<div class="hand save" style="width: 232px; position: absolute; height: 20px; text-align: center; margin: auto; left: 0px; right: 0px; clear: both; top: 92%; border-radius: 6px" oplysning="Dine indstillinger blev gemt!">Gem</div>
 		</div>
