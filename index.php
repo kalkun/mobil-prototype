@@ -7,14 +7,16 @@
 <body>
 	<div class="phone">
 		<div id="index" class="screen">
-			
+			<br>
 			<div class="left">
 				Lås hoveddør:
 			</div>
 			<div class="right">
 				<div class="onoff hand" style="background-color: green;">Åben</div>
 			</div>
-			<div class="hand link" page="subindex">Menu</div>
+			<br>
+			<br>
+			<div class="hand link" page="subindex" style="margin-top:50px;">Menu</div>
 			<div class="hand link" page="settings">Indstillinger</div>
 			<div class="hand link" page="keys">Nøglebundt</div>
 			<div class="hand link" page="profil">Profil</div>

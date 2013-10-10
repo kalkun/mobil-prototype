@@ -168,3 +168,15 @@ input
 	position: relative;
 	margin: 20px;
 }
+#index .link
+{
+	position: relative;
+	width: 100px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	padding: 2px;
+	border: solid;
+	border-color: blue;
+	margin-top: 5px;
+}
