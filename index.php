@@ -7,7 +7,14 @@
 <body>
 	<div class="phone">
 		<div id="index" class="screen">
-			
+			<div class="hand link" func="maindoor" page="maindoor">Hoveddør</div>
+			<div class="hand link" page="home">Hjem</div>
+			<div class="hand link" page="settings">Indstillinger</div>
+			<div class="hand link" page="keys">Nøglebundt</div>
+			<div class="hand link" page="profil">Profil</div>
+			<div class="hand" style="font-size: 70px; font-family: bold;"><font color="green">+</font></div>
+
+	
 		</div>
 		<div id="subindex" class="screen hide">
 			<table>
@@ -68,6 +75,12 @@
 		</div>
 		<div id="unlocked" class="screen hide">
 			locked
+		</div>
+		<div id="maindoor" class="screen hide">
+
+		</div>
+		<div id="profil" class="screen hide">
+			din profil
 		</div>
 		<div class="home-button link hand" page="index">
 			<div class="inner-home">
@@ -139,6 +152,8 @@ var keys = [{
 		})
 		$('.pass').keydown(function(e){
 			if(e.keyCode ==13) {$('#confirm').trigger('click')}})	 
+
+		$
 		</script>
 
 		<script src="linker.js"></script>
@@ -151,6 +166,7 @@ var keys = [{
 		<script src="displayFree.js"></script>
 		<script src="displayLocked.js"></script>
 		<script src="displayUnlocked.js"></script>
+		<script src="maindoor.js"></script>
 		<script src="keys.js"></script>
 		<script src="remove.js"></script>
 		<script src="unlockall.js"></script>
