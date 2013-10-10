@@ -70,7 +70,7 @@
 			Alt gik fint
 		</div>
 	</div>
-	<div class="loginscreen">
+	<div class="loginscreen screen">
 		<div class="loginmessage">
 			<div>
 				Login med sikkerhedsnøgle:<br>
