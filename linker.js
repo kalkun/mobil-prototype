@@ -26,7 +26,7 @@ $(".link").mousedown(function()
 		case "displayUnlocked":
 		displayUnlocked();
 		case "maindoor": 
-		lockmain();
+		//lockmain();
 		return;
 	}
 });

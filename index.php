@@ -7,14 +7,17 @@
 <body>
 	<div class="phone">
 		<div id="index" class="screen">
-			<div class="hand link" func="maindoor" page="maindoor">Hoveddør</div>
-			<div class="hand link" page="home">Hjem</div>
+			
+			<div class="left">
+				Lås hoveddør:
+			</div>
+			<div class="right">
+				<div class="onoff hand" style="background-color: green;">On</div>
+			</div>
+			<div class="hand link" page="subindex">Menu</div>
 			<div class="hand link" page="settings">Indstillinger</div>
 			<div class="hand link" page="keys">Nøglebundt</div>
 			<div class="hand link" page="profil">Profil</div>
-			<div class="hand" style="font-size: 70px; font-family: bold;"><font color="green">+</font></div>
-
-	
 		</div>
 		<div id="subindex" class="screen hide">
 			<table>
@@ -75,9 +78,6 @@
 		</div>
 		<div id="unlocked" class="screen hide">
 			locked
-		</div>
-		<div id="maindoor" class="screen hide">
-
 		</div>
 		<div id="profil" class="screen hide">
 			din profil
