@@ -79,6 +79,9 @@
 		<div id="maindoor" class="screen hide">
 
 		</div>
+		<div id="profil" class="screen hide">
+			din profil
+		</div>
 		<div class="home-button link hand" page="index">
 			<div class="inner-home">
 			</div>
