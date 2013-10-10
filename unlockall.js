@@ -16,18 +16,22 @@ $(".unlockall").mousedown(function()
 	$(".messagebox").removeClass("hide");
 });
 
-$(".unlockallhome").mousedown(function()
+function activateunluckhome()
 {
-	$.each(doorsHome, function(i)
+	$(".unlockallhome").unbind();
+	$(".unlockallhome").mousedown(function()
 	{
-		doorsHome[i].locked = false;
+		$.each(doorsHome, function(i)
+		{
+			doorsHome[i].locked = false;
+		});
+		$(".messageboxmessage").html("Samtlige døre i dit hjem er nu ulåst");
+		$(".messagebox").removeClass("hide");
+		displayHome();
+		displayUnlocked();
+		displayLocked();
 	});
-	$(".messageboxmessage").html("Samtlige døre i dit hjem er nu ulåst");
-	$(".messagebox").removeClass("hide");
-	displayHome();
-	displayUnlocked();
-	displayLocked();
-});
+}
 
 $(".unlockallwork").mousedown(function()
 {
