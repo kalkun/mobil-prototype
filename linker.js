@@ -36,3 +36,16 @@ $(".link").mousedown(function()
 		return;
 	}
 });
+
+function navhistory()
+{
+	if(history.length > 1 && !$('.messagebox').is(':visible') && $('.loginscreen').length == 0)
+	{
+		$('#' + history.pop() ).addClass('hide')
+
+		back = history.pop() 
+		$('#' + back ).removeClass('hide') 
+		history.push(back)
+
+	}
+}

@@ -158,16 +158,29 @@ var keys = [{
 
 		$(document).keydown(function(e)
 		{
-			if (e.keyCode == 37 && history.length > 1 && !$('.messagebox').is(':visible') && $('.loginscreen').length == 0)
+			if (e.keyCode == 37)
 			{
-				$('#' + history.pop() ).addClass('hide')
-				
-				back = history.pop() 
-				$('#' + back ).removeClass('hide') 
-				history.push(back)
-
+				navhistory();
 			}
 		})
+		// detect right swipe:
+		var xStart;
+		$(document).mousedown(function(e)
+		{
+			xStart = e.pageX;
+		})
+		$(document).mouseup(function(e)
+		{
+			if (xStart != undefined)
+			{
+				len = e.pageX - xStart 
+				if(len > 35 && len < 100)
+				{
+					navhistory();
+				}
+			}
+		})
+
 		</script>
 
 		<script src="linker.js"></script>
