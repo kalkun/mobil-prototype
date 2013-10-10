@@ -5,6 +5,7 @@
 	<link href="iPhone.css" rel="stylesheet">
 </head>
 <body>
+	<button onclick="navhistory()">Back</button>
 	<div class="phone">
 		<div id="index" class="screen">
 			<br>
