@@ -114,10 +114,12 @@ input
 .onoff
 {
 	width: 50px;
+	border-radius: 5px;
 }
 .onsettingsoff
 {
 	width: 50px;
+	border-radius: 5px;
 }
 
 .messagebox
@@ -171,13 +173,17 @@ input
 #index .link
 {
 	position: relative;
-	width: 130px;
+	width: 95%;
+	height: 60px;
 	left: 0;
 	right: 0;
-	margin: auto;
-	padding: 2px;
+	border-radius: 10px;
+	margin-left: auto;
+	margin-right: auto;
 	border: solid;
-	border-color: blue;
-	margin-top: 5px;
+	margin-top: 10px;
+	border-color: black;
 	font-family: "Lucida Console", Monaco, monospace;
+	text-align: center;
+	font-size: x-large;
 }

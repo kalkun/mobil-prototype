@@ -14,22 +14,20 @@
 			<div class="right">
 				<div class="onoff hand" style="background-color: green;">Åben</div>
 			</div>
-			<br>
-			<br>
 			<div class="hand link" page="subindex" style="margin-top:50px;">Menu</div>
 			<div class="hand link" page="settings">Indstillinger</div>
 			<div class="hand link" func="displayKeyChain" page="keychain">Nøglebundt</div>
-			<div class="hand link" page="profil">Profil</div>
+			<div class="hand link" func="displayKeys" page="keys">Profil</div>
 		</div>
 		<div id="subindex" class="screen hide">
 			<table>
 				<tr>
 					<td class="hand lockall">Lås alle</td>
-					<td class="hand " page="unlockall">Åben alle</td>
+					<td class="hand unlockall" page="unlockall">Åben alle</td>
 					<td class="link hand" func="displayWork" page="work">Arbejde</td>
 				</tr>
 				<tr>
-					<td class="link hand" func="displayKeys" page="keys">Nøgler</td>
+					<td class="link hand" func="displayKeys" page="keys">Profil</td>
 					<td class="link hand" func="displayHome" page="home">Hjemmet</td>
 					<td class="link hand" func="displayFree" page="free">Fritid</td>
 				</tr>
@@ -72,11 +70,14 @@
 		<div id="free" class="screen hide">
 			Free
 		</div>
+		<div id="keys" class="screen hide">
+			Keys
+		</div>
 		<div id="locked" class="screen hide">
 			locked
 		</div>
 		<div id="unlocked" class="screen hide">
-			locked
+			unlock
 		</div>
 		<div id="profil" class="screen hide">
 			din profil
