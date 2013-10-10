@@ -25,7 +25,7 @@
 			<table>
 				<tr>
 					<td class="hand lockall">Lås alle</td>
-					<td class="hand unlockall" page="unlockall">Åben alle</td>
+					<td class="hand " page="unlockall">Åben alle</td>
 					<td class="link hand" func="displayWork" page="work">Arbejde</td>
 				</tr>
 				<tr>

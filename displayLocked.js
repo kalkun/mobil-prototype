@@ -99,13 +99,13 @@ $.each(doorsHome, function(i)
 		$(right).attr("type", "home");
 		if (doorsHome[i].locked)
 		{
-			$(right).html("On");
+			$(right).html("Åben");
 			$(right).css("background-color", "green");
 			$(right).css("text-align", "left");
 		}
 		else
 		{
-			$(right).html("Off");
+			$(right).html("Låst");
 			$(right).css("background-color", "red");
 			$(right).css("text-align", "center");
 		}
@@ -153,13 +153,13 @@ $.each(doorsFree, function(i)
 		$(right).attr("type", "free");
 		if (doorsFree[i].locked)
 		{
-			$(right).html("On");
+			$(right).html("Åben");
 			$(right).css("background-color", "green");
 			$(right).css("text-align", "left");
 		}
 		else
 		{
-			$(right).html("Off");
+			$(right).html("Låst");
 			$(right).css("background-color", "red");
 			$(right).css("text-align", "center");
 		}
