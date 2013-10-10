@@ -3,7 +3,7 @@ function displayKeyChain()
 	$("#keychain").empty();
 	var header = document.createElement("div");
 	$(header).css("text-align", "center");
-	$(header).html("Unlocked");
+	$(header).html("Nøglebundt");
 	$("#keychain").append(header);
 
 	var left = document.createElement("div");
