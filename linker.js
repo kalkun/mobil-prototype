@@ -26,6 +26,9 @@ $(".link").mousedown(function()
 		case "displayUnlocked":
 		displayUnlocked();
 		case "maindoor": 
+		case "displayKeyChain":
+		displayKeyChain();
+		case "maindoor": 
 		//lockmain();
 		return;
 	}

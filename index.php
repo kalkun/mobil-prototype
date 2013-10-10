@@ -18,7 +18,7 @@
 			<br>
 			<div class="hand link" page="subindex" style="margin-top:50px;">Menu</div>
 			<div class="hand link" page="settings">Indstillinger</div>
-			<div class="hand link" page="keys">Nøglebundt</div>
+			<div class="hand link" func="displayKeyChain" page="keychain">Nøglebundt</div>
 			<div class="hand link" page="profil">Profil</div>
 		</div>
 		<div id="subindex" class="screen hide">
@@ -66,9 +66,6 @@
 		<div id="work" class="screen hide">
 			work
 		</div>
-		<div id="keys" class="screen hide">
-			keys
-		</div>
 		<div id="home" class="screen hide">
 			Home
 		</div>
@@ -82,6 +79,9 @@
 			locked
 		</div>
 		<div id="profil" class="screen hide">
+			din profil
+		</div>
+		<div id="keychain" class="screen hide">
 			din profil
 		</div>
 		<div class="home-button link hand" page="index">
@@ -172,4 +172,5 @@ var keys = [{
 		<script src="keys.js"></script>
 		<script src="remove.js"></script>
 		<script src="unlockall.js"></script>
+		<script src="displaykeychain.js"></script>
 		</html>
