@@ -76,7 +76,7 @@
 				Login med sikkerhedsnøgle:<br>
 				<input class="pass" type="password"></input>
 				<br>
-				<button id="confirm">Login</button>
+				<button id="confirm">login</button>
 			</div>
 		</div>
 	</div>
@@ -112,7 +112,6 @@ var keys = [{
 		}]
 		</script>
 		<script src="jquery.js"></script>
-		<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
 		<script> 
 		$(document).ready(function(){$('.pass').focus()})
 		$('.phone').children().on('swiperight', function() {
@@ -132,6 +131,7 @@ var keys = [{
 		$('.pass').keydown(function(e){
 			if(e.keyCode ==13) {$('#confirm').trigger('click')}})	 
 		</script>
+
 		<script src="linker.js"></script>
 		<script src="onoff.js"></script>
 		<script src="save.js"></script>
