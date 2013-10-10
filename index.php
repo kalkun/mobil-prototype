@@ -156,7 +156,18 @@ var keys = [{
 		$('.pass').keydown(function(e){
 			if(e.keyCode ==13) {$('#confirm').trigger('click')}})	 
 
-		$
+		$(document).keydown(function(e)
+		{
+			if (e.keyCode == 37 && history.length > 1 && !$('.messagebox').is(':visible') && $('.loginscreen').length == 0)
+			{
+				$('#' + history.pop() ).addClass('hide')
+				
+				back = history.pop() 
+				$('#' + back ).removeClass('hide') 
+				history.push(back)
+
+			}
+		})
 		</script>
 
 		<script src="linker.js"></script>

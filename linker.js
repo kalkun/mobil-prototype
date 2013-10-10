@@ -1,11 +1,14 @@
+var history = ["index"];
 $(".link").mousedown(function()
 {
 	$.each($(".screen"), function()
 	{
 		$(this).addClass("hide");
 	});
+
 	$(".messagebox").addClass("hide");
 	$("#" + $(this).attr("page")).removeClass("hide");
+	history.push($(this).attr("page"));
 	switch($(this).attr("func"))
 	{
 		case "displayWork":
