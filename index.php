@@ -153,4 +153,5 @@ var keys = [{
 		<script src="displayUnlocked.js"></script>
 		<script src="keys.js"></script>
 		<script src="remove.js"></script>
+		<script src="unlockall.js"></script>
 		</html>
