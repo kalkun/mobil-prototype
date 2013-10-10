@@ -3,9 +3,9 @@ function turnonoff()
 	$(".onoff").unbind();
 	$(".onoff").mousedown(function()
 	{
-		if ($(this).html() == "On")
+		if ($(this).html() == "Åben")
 		{
-			$(this).html("Off");
+			$(this).html("Låst");
 			$(this).css("background-color", "red");
 			$(this).css("text-align", "center");
 			switch($(this).attr("type"))
@@ -26,7 +26,7 @@ function turnonoff()
 		}
 		else
 		{
-			$(this).html("On");
+			$(this).html("Åben");
 			$(this).css("background-color", "green");
 			$(this).css("text-align", "left");
 			switch($(this).attr("type"))
@@ -52,6 +52,22 @@ function turnonoff()
 {
 	turnonoff();
 })();
+
+$(".onsettingsoff").mousedown(function()
+{
+	if ($(this).html() == "Til")
+	{
+		$(this).html("Fra");
+		$(this).css("background-color", "red");
+		$(this).css("text-align", "center");
+	}
+	else
+	{
+		$(this).html("Til");
+		$(this).css("background-color", "green");
+		$(this).css("text-align", "left");
+	}
+});
 
 function onOffWork(names, value)
 {

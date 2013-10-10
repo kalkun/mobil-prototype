@@ -12,7 +12,7 @@
 				Lås hoveddør:
 			</div>
 			<div class="right">
-				<div class="onoff hand" style="background-color: green;">On</div>
+				<div class="onoff hand" style="background-color: green;">Åben</div>
 			</div>
 			<div class="hand link" page="subindex">Menu</div>
 			<div class="hand link" page="settings">Indstillinger</div>
@@ -45,7 +45,7 @@
 				Autolås døre
 			</div>
 			<div class="right">
-				<div class="onoff hand" style="background-color: green;">On</div>
+				<div class="onsettingsoff hand" style="background-color: green;">Til</div>
 			</div>
 			<div class="left">
 				Tidspunkt
